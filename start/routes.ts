@@ -26,3 +26,6 @@ Route.get('/', async () => {
 
 Route.post("/register", "AdonisJsController.register")
 Route.post("/login", "AdonisJsController.login")
+Route.group(() => {
+  Route.put("/user", "UsersController.update")
+}).middleware('auth')
