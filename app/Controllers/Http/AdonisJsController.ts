@@ -1,5 +1,5 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
-import User from 'App/Models/User'
+import User from '../../Models/User'
 import UserValidator from '../../Validators/UserValidator'
 
 export default class AdonisJsController {
@@ -10,7 +10,7 @@ export default class AdonisJsController {
         return user
     }
     public async login({ request, auth, response}:HttpContextContract) {
-        try {
+       try {
             const {email, password} = request.all()
             const token = await auth.use('api').attempt(email, password, {
                 expiresIn: '1day'

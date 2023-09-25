@@ -3,7 +3,8 @@
 | Application middleware
 |--------------------------------------------------------------------------
 |
-| This file is used to define middleware for HTTP requests. You can register
+| This file is used to d
+efine middleware for HTTP requests. You can register
 | middleware as a `closure` or an IoC container binding. The bindings are
 | preferred, since they keep this file clean.
 |
