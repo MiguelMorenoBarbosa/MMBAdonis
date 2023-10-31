@@ -28,4 +28,5 @@ Route.post("/register", "AdonisJsController.register")
 Route.post("/login", "AdonisJsController.login")
 Route.group(() => {
   Route.put("/user", "UsersCrontroller.update")
+  Route.post("/push", "SendPushesController.send")
 }).middleware('auth')
