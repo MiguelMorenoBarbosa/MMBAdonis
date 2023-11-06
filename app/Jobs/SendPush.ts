@@ -9,9 +9,10 @@ export default class implements JobHandlerContract {
         this.job = job
     }
 
-    /** 
+    /**
      * Base Entry point
-@ioc:Rlanz/Queuepublic async handle (payload: SendPushPayload) {
+     */
+public async handle (payload: SendPushPayload) {
     try {
         console.log(payload)
         await apiAxios.post( 
