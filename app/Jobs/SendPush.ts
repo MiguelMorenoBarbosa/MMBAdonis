@@ -1,4 +1,4 @@
-import { apiAxios } from 'Config/app'
+import { apiAxios } from '../../config/app'
 import type { JobHandlerContract, Job } from '@ioc:Rlanz/Queue'
 import { AxiosError } from 'axios';
 
